@@ -1,7 +1,7 @@
 ember-cli-default-error-page
 ==============================================================================
 
-[Short description of the addon.]
+Handle the unhandled route requests using wildcard route path.
 
 Installation
 ------------------------------------------------------------------------------
@@ -11,10 +11,11 @@ ember install ember-cli-default-error-page
 ```
 
 
-Usage
+How it works
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+This addon automatically inserts the default wildcard route into `router.js` file of the ember app. Add-on comes with default error template `not-found.hbs`, if developer wants to add a customized page to the app, add `not-found.hbs` into ember project or change the route file to access the error template.
+
 
 
 Contributing
@@ -26,21 +27,10 @@ Contributing
 * `cd ember-cli-default-error-page`
 * `npm install`
 
-### Linting
-
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
 ### Running tests
 
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
-
-### Running the dummy application
-
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+* `yarn test` – Runs the test suite using yarn
+* `npm test` – Runs the test suite using npm
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
