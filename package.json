@@ -16,15 +16,17 @@
     "build": "ember build",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test",
+    "test": "mocha tests/route-modifier-test.js",
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.16.0"
+    "ember-cli-babel": "^6.16.0",
+    "ember-router-generator": "^1.2.3"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.1",
     "broccoli-asset-rev": "^2.7.0",
+    "chai": "^4.1.2",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~3.4.0-beta.1",
     "ember-cli-dependency-checker": "^2.0.0",
@@ -46,6 +48,7 @@
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^6.0.1",
     "loader.js": "^4.2.3",
+    "mocha": "^5.2.0",
     "qunit-dom": "^0.6.2"
   },
   "engines": {
